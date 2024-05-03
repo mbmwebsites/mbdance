@@ -1,0 +1,36 @@
+#projectMain {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2% auto;
+  font-family: "Kanit", sans-serif;
+}
+
+#projectContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#projectContent .project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0 2% 0;
+}
+#projectContent .project h2 {
+  width: 50%;
+  color: #285480;
+  font-size: 48px;
+  text-align: center;
+  text-shadow: 0.5px 0.5px 0px #181818;
+}
+#projectContent .project video {
+  width: 50%;
+  margin: 1% 0;
+  border: 2px solid #181818;
+  box-shadow: 5px 5px 8px #181818;
+}
+#projectContent .project p {
+  font-size: 28px;
+}/*# sourceMappingURL=projectpage.css.map */

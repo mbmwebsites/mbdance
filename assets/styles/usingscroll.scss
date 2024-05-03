@@ -1,0 +1,346 @@
+// resumepage
+$white : #DFDFDF;
+$black: #181818;
+$primary: #285480;
+$secondary: #01207C;
+$textColor: #01207C;
+
+input {
+    display: none;
+    visibility: hidden;
+}
+
+#photoMain {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // margin: 2% auto;
+    // font-family: 'Kanit', sans-serif;
+    // background-color: red;
+    z-index: 5;
+
+    // h2 {
+    //     width: 50%;
+    //     color: $primary;
+    //     font-size: 42px;
+    //     margin: 0 0 2% 0;
+    //     text-align: center;
+    //     text-shadow: 0.5px 0.5px 0px $black;
+    //     // background-color: purple;
+    // }
+}
+
+#heroImage {
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        transform: translateY(20%) scale(1.4);
+        transform-origin: right;
+    }
+}
+
+#photoContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    transition: 0.8s;
+    background-image: linear-gradient(to right, #fff, $white);
+    box-shadow: 0 -10px 20px $black;
+    padding: 2% 0 0 0;
+
+    #input1:checked ~ #img1,
+    #input2:checked ~ #img2,
+    #input3:checked ~ #img3,
+    #input4:checked ~ #img4,
+    #input5:checked ~ #img5,
+    #input6:checked ~ #img6,
+    #input7:checked ~ #img7,
+    #input8:checked ~ #img8,
+    #input9:checked ~ #img9,
+    #input10:checked ~ #img10,
+    #input11:checked ~ #img11,
+    #input12:checked ~ #img12,
+    #input13:checked ~ #img13,
+    #input14:checked ~ #img14,
+    #input15:checked ~ #img15 {
+        position: absolute;
+        margin: auto;
+        padding: 40% 50%;
+        background-image: linear-gradient(to right, #ffffff, $white);
+        box-sizing: border-box;
+        box-shadow: 0 0 20px $black;
+
+        img {
+            margin: 5% 0;
+            position: absolute;
+            top: 0;
+            left: 25%;
+            width: 50%;
+        }
+    }
+
+    #input1:checked ~ #img2,
+    #input1:checked ~ #img3,
+    #input1:checked ~ #img4,
+    #input1:checked ~ #img5,
+    #input1:checked ~ #img6,
+    #input1:checked ~ #img7,
+    #input1:checked ~ #img8,
+    #input1:checked ~ #img9,
+    #input1:checked ~ #img10,
+    #input1:checked ~ #img11,
+    #input1:checked ~ #img12,
+    #input1:checked ~ #img13,
+    #input1:checked ~ #img14,
+    #input1:checked ~ #img15,
+
+    #input2:checked ~ #img1,
+    #input2:checked ~ #img3,
+    #input2:checked ~ #img4,
+    #input2:checked ~ #img5,
+    #input2:checked ~ #img6,
+    #input2:checked ~ #img7,
+    #input2:checked ~ #img8,
+    #input2:checked ~ #img9,
+    #input2:checked ~ #img10,
+    #input2:checked ~ #img11,
+    #input2:checked ~ #img12,
+    #input2:checked ~ #img13,
+    #input2:checked ~ #img14,
+    #input2:checked ~ #img15,
+    
+    #input3:checked ~ #img1,
+    #input3:checked ~ #img2,
+    #input3:checked ~ #img4,
+    #input3:checked ~ #img5,
+    #input3:checked ~ #img6,
+    #input3:checked ~ #img7,
+    #input3:checked ~ #img8,
+    #input3:checked ~ #img9,
+    #input3:checked ~ #img10,
+    #input3:checked ~ #img11,
+    #input3:checked ~ #img12,
+    #input3:checked ~ #img13,
+    #input3:checked ~ #img14,
+    #input3:checked ~ #img15,
+    
+    #input4:checked ~ #img1,
+    #input4:checked ~ #img2,
+    #input4:checked ~ #img3,
+    #input4:checked ~ #img5,
+    #input4:checked ~ #img6,
+    #input4:checked ~ #img7,
+    #input4:checked ~ #img8,
+    #input4:checked ~ #img9,
+    #input4:checked ~ #img10,
+    #input4:checked ~ #img11,
+    #input4:checked ~ #img12,
+    #input4:checked ~ #img13,
+    #input4:checked ~ #img14,
+    #input4:checked ~ #img15,
+    
+    #input5:checked ~ #img1,
+    #input5:checked ~ #img2,
+    #input5:checked ~ #img3,
+    #input5:checked ~ #img4,
+    #input5:checked ~ #img6,
+    #input5:checked ~ #img7,
+    #input5:checked ~ #img8,
+    #input5:checked ~ #img9,
+    #input5:checked ~ #img10,
+    #input5:checked ~ #img11,
+    #input5:checked ~ #img12,
+    #input5:checked ~ #img13,
+    #input5:checked ~ #img14,
+    #input5:checked ~ #img15,
+    
+    #input6:checked ~ #img1,
+    #input6:checked ~ #img2,
+    #input6:checked ~ #img3,
+    #input6:checked ~ #img4,
+    #input6:checked ~ #img5,
+    #input6:checked ~ #img7,
+    #input6:checked ~ #img8,
+    #input6:checked ~ #img9,
+    #input6:checked ~ #img10,
+    #input6:checked ~ #img11,
+    #input6:checked ~ #img12,
+    #input6:checked ~ #img13,
+    #input6:checked ~ #img14,
+    #input6:checked ~ #img15,
+    
+    #input7:checked ~ #img1,
+    #input7:checked ~ #img2,
+    #input7:checked ~ #img3,
+    #input7:checked ~ #img4,
+    #input7:checked ~ #img5,
+    #input7:checked ~ #img6,
+    #input7:checked ~ #img8,
+    #input7:checked ~ #img9,
+    #input7:checked ~ #img10,
+    #input7:checked ~ #img11,
+    #input7:checked ~ #img12,
+    #input7:checked ~ #img13,
+    #input7:checked ~ #img14,
+    #input7:checked ~ #img15,
+    
+    #input8:checked ~ #img1,
+    #input8:checked ~ #img2,
+    #input8:checked ~ #img3,
+    #input8:checked ~ #img4,
+    #input8:checked ~ #img5,
+    #input8:checked ~ #img6,
+    #input8:checked ~ #img7,
+    #input8:checked ~ #img9,
+    #input8:checked ~ #img10,
+    #input8:checked ~ #img11,
+    #input8:checked ~ #img12,
+    #input8:checked ~ #img13,
+    #input8:checked ~ #img14,
+    #input8:checked ~ #img15,
+    
+    #input9:checked ~ #img1,
+    #input9:checked ~ #img2,
+    #input9:checked ~ #img3,
+    #input9:checked ~ #img4,
+    #input9:checked ~ #img5,
+    #input9:checked ~ #img6,
+    #input9:checked ~ #img7,
+    #input9:checked ~ #img8,
+    #input9:checked ~ #img10,
+    #input9:checked ~ #img11,
+    #input9:checked ~ #img12,
+    #input9:checked ~ #img13,
+    #input9:checked ~ #img14,
+    #input9:checked ~ #img15,
+    
+    #input10:checked ~ #img1,
+    #input10:checked ~ #img2,
+    #input10:checked ~ #img3,
+    #input10:checked ~ #img4,
+    #input10:checked ~ #img5,
+    #input10:checked ~ #img6,
+    #input10:checked ~ #img7,
+    #input10:checked ~ #img8,
+    #input10:checked ~ #img9,
+    #input10:checked ~ #img11,
+    #input10:checked ~ #img12,
+    #input10:checked ~ #img13,
+    #input10:checked ~ #img14,
+    #input10:checked ~ #img15,
+    
+    #input11:checked ~ #img1,
+    #input11:checked ~ #img2,
+    #input11:checked ~ #img3,
+    #input11:checked ~ #img4,
+    #input11:checked ~ #img5,
+    #input11:checked ~ #img6,
+    #input11:checked ~ #img7,
+    #input11:checked ~ #img8,
+    #input11:checked ~ #img9,
+    #input11:checked ~ #img10,
+    #input11:checked ~ #img12,
+    #input11:checked ~ #img13,
+    #input11:checked ~ #img14,
+    #input11:checked ~ #img15,
+    
+    #input12:checked ~ #img1,
+    #input12:checked ~ #img2,
+    #input12:checked ~ #img3,
+    #input12:checked ~ #img4,
+    #input12:checked ~ #img5,
+    #input12:checked ~ #img6,
+    #input12:checked ~ #img7,
+    #input12:checked ~ #img8,
+    #input12:checked ~ #img9,
+    #input12:checked ~ #img10,
+    #input12:checked ~ #img11,
+    #input12:checked ~ #img13,
+    #input12:checked ~ #img14,
+    #input12:checked ~ #img15,
+    
+    #input13:checked ~ #img1,
+    #input13:checked ~ #img2,
+    #input13:checked ~ #img3,
+    #input13:checked ~ #img4,
+    #input13:checked ~ #img5,
+    #input13:checked ~ #img6,
+    #input13:checked ~ #img7,
+    #input13:checked ~ #img8,
+    #input13:checked ~ #img9,
+    #input13:checked ~ #img10,
+    #input13:checked ~ #img11,
+    #input13:checked ~ #img12,
+    #input13:checked ~ #img14,
+    #input13:checked ~ #img15,
+    
+    #input14:checked ~ #img1,
+    #input14:checked ~ #img2,
+    #input14:checked ~ #img3,
+    #input14:checked ~ #img4,
+    #input14:checked ~ #img5,
+    #input14:checked ~ #img6,
+    #input14:checked ~ #img7,
+    #input14:checked ~ #img8,
+    #input14:checked ~ #img9,
+    #input14:checked ~ #img10,
+    #input14:checked ~ #img11,
+    #input14:checked ~ #img12,
+    #input14:checked ~ #img13,
+    #input14:checked ~ #img15,
+    
+    #input15:checked ~ #img1,
+    #input15:checked ~ #img2,
+    #input15:checked ~ #img3,
+    #input15:checked ~ #img4,
+    #input15:checked ~ #img5,
+    #input15:checked ~ #img6,
+    #input15:checked ~ #img7,
+    #input15:checked ~ #img8,
+    #input15:checked ~ #img9,
+    #input15:checked ~ #img10,
+    #input15:checked ~ #img11,
+    #input15:checked ~ #img12,
+    #input15:checked ~ #img13,
+    #input15:checked ~ #img14 {
+        display: none;
+    }
+
+    #input1:checked ~ label #img1,
+    #input2:checked ~ label #img2,
+    #input3:checked ~ label #img3,
+    #input4:checked ~ label #img4,
+    #input5:checked ~ label #img5,
+    #input6:checked ~ label #img6,
+    #input7:checked ~ label #img7,
+    #input8:checked ~ label #img8,
+    #input9:checked ~ label #img9,
+    #input10:checked ~ label #img10,
+    #input11:checked ~ label #img11,
+    #input12:checked ~ label #img12,
+    #input13:checked ~ label #img13,
+    #input14:checked ~ label #img14,
+    #input15:checked ~ label #img15 {
+        transform: rotate(60deg);
+    }
+
+    label {
+        width:25%;
+        // background-image: url(../images/MachmerMedia_MattBishop.jpg);
+        // background-size: 100%;
+        // border: 2px solid $black;
+        // box-shadow: 5px 5px 8px $black;
+        transition: 0.8s;
+        margin: 1%;
+        cursor: pointer;
+        // background-color: red;
+
+        img {
+            width: 100%;
+            box-shadow: 5px 5px 8px $black;
+            cursor: pointer;
+        }
+    }
+}

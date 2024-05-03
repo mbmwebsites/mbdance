@@ -1,0 +1,99 @@
+#homeMain {
+  flex: 1;
+  margin: 35px 0;
+  display: flex;
+  justify-content: space-evenly;
+  font-family: "Kanit", sans-serif;
+}
+#homeMain figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#homePhoto {
+  width: clamp(435px, 35%, 50rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1% 0 0 0;
+}
+#homePhoto img {
+  width: 100%;
+  border-radius: 120% 80% 40% 90%;
+  box-shadow: 0 0 12px 2px #285480;
+  box-shadow: 0 0 16px 1px #181818;
+}
+#homePhoto figcaption {
+  font-style: italic;
+  margin: 15px 0 0 0;
+}
+
+#homeNav {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Kanit", sans-serif;
+}
+#homeNav ul {
+  width: 50%;
+  padding: 4%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+#homeNav ul li {
+  list-style-type: none;
+  margin: max(10px, 1%) 0;
+  width: 100%;
+  transition: 0.5s;
+}
+#homeNav ul li a {
+  display: block;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 10%;
+  color: #01207C;
+  text-align: center;
+  background-color: #DFDFDF;
+  border: 2px solid #181818;
+  box-shadow: 5px 5px 5px #181818;
+  transition: 0.5s;
+}
+#homeNav ul li a:hover {
+  color: #DFDFDF;
+  background-image: linear-gradient(to top right, #285480, #01207C);
+  box-shadow: 5px 5px 5px #181818;
+  box-shadow: none;
+}
+
+#navHeader {
+  display: none;
+}
+
+@media screen and (max-width: 1100px) {
+  #homeMain {
+    flex: unset;
+  }
+}
+@media screen and (max-width: 700px) {
+  #navHeader {
+    display: block;
+  }
+  #indexHeader {
+    display: none;
+  }
+  #homeMain {
+    flex-direction: column;
+    align-items: center;
+  }
+  #homePhoto {
+    width: 90%;
+  }
+  #homeNav {
+    display: none;
+  }
+}/*# sourceMappingURL=homepage.css.map */

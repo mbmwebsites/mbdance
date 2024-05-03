@@ -1,0 +1,124 @@
+// homepage
+$white : #DFDFDF;
+$black: #181818;
+$primary: #285480;
+$secondary: #01207C;
+$textColor: #01207C;
+
+#homeMain {
+    flex: 1;
+    margin: 35px 0;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Kanit', sans-serif;
+
+    figure {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        // background-color: red;
+    }
+}
+
+#homePhoto {
+    width: clamp(435px, 35%, 50rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1% 0 0 0;
+
+    img {
+        width: 100%;
+        border-radius: 120% 80% 40% 90%;
+        // box-shadow: 0 0 12px 8px $primary;
+        box-shadow: 0 0 12px 2px $primary;
+        // box-shadow: 0 0 12px 2px $secondary;
+        box-shadow: 0 0 16px 1px $black;
+    }
+
+    figcaption {
+        font-style: italic;
+        margin: 15px 0 0 0;
+    }
+}
+
+#homeNav {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Kanit', sans-serif;
+
+    ul {
+        width: clamp(40%, 50%, 70%);
+        padding: 4%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+
+        li {
+            list-style-type: none;
+            margin: max(10px, 1%) 0;
+            width: 100%;
+            transition: .5s;
+
+            a {
+                display: block;
+                text-decoration: none;
+                font-size: clamp(22px, 24px, 26px);
+                font-weight: 600;
+                padding: 10%;
+                color: $textColor;
+                text-align: center;
+                background-color: $white;
+                border: 2px solid $black;
+                box-shadow: 5px 5px 5px $black;
+                // box-shadow: 5px 5px 5px $secondary;
+                transition: 0.5s;
+            }
+
+            a:hover {
+                color: $white;
+                // background-color: $primary;
+                background-image: linear-gradient(to top right, $primary, #01207C);
+                box-shadow: 5px 5px 5px $black;
+                box-shadow: none;
+            }
+        }
+    }
+}
+
+#navHeader {
+    display: none;
+}
+
+@media screen and (max-width: 1100px) {
+    #homeMain {
+        flex: unset;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    #navHeader {
+        display: block;
+    }
+
+    #indexHeader {
+        display: none;
+    }
+
+    #homeMain {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #homePhoto {
+        width: 90%;
+    }
+
+    #homeNav {
+        display: none;
+    }
+}

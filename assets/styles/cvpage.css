@@ -1,0 +1,84 @@
+#cvMain {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2% auto;
+  font-family: "Kanit", sans-serif;
+}
+#cvMain h2 {
+  width: 50%;
+  color: #285480;
+  font-size: 42px;
+  text-align: center;
+  text-shadow: 0.5px 0.5px 0px #181818;
+}
+
+#cvContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#cvContent img {
+  width: 55%;
+  width: 350px;
+  width: clamp(250px, 80%, 60rem);
+  margin: 1% 0;
+  border: 2px solid #181818;
+  box-shadow: 5px 5px 8px #181818;
+}
+#cvContent img:nth-child(1) {
+  animation: revealFirst linear;
+  animation-timeline: view();
+}
+#cvContent img:nth-child(2),
+#cvContent img:nth-child(3),
+#cvContent img:nth-child(4) {
+  animation: revealMiddle linear;
+  animation-timeline: view();
+}
+#cvContent img:nth-child(5) {
+  animation: revealLast linear;
+  animation-timeline: view();
+}
+
+@keyframes revealFirst {
+  30% {
+    scale: 1;
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  90% {
+    scale: 0.5;
+    opacity: 0;
+  }
+}
+@keyframes revealMiddle {
+  0% {
+    scale: 0.8;
+    opacity: 0;
+  }
+  20% {
+    scale: 1;
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    scale: 0.5;
+    opacity: 0;
+  }
+}
+@keyframes revealLast {
+  0% {
+    scale: 0.5;
+    opacity: 0;
+  }
+  30% {
+    scale: 1;
+    opacity: 1;
+  }
+}/*# sourceMappingURL=cvpage.css.map */

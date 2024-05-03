@@ -1,0 +1,82 @@
+// cvpage
+$white : #DFDFDF;
+$black: #181818;
+$primary: #285480;
+$secondary: #01207C;
+$textColor: #01207C;
+
+#cvMain {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2% auto;
+    font-family: 'Kanit', sans-serif;
+    // background-color: red;
+
+    h2 {
+        width: 50%;
+        color: $primary;
+        font-size: 42px;
+        // margin: 0 0 2% 0;
+        text-align: center;
+        text-shadow: 0.5px 0.5px 0px $black;
+        // background-color: purple;
+    }
+}
+
+#cvContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+        width: 55%;
+        width: 350px;
+        width: clamp(250px, 80%, 60rem);
+        margin: 1% 0;
+        border: 2px solid $black;
+        box-shadow: 5px 5px 8px $black;
+    }
+
+    img:nth-child(1) {
+        animation: revealFirst linear;
+        animation-timeline: view();
+    }
+
+    img:nth-child(2),
+    img:nth-child(3),
+    img:nth-child(4) {
+        animation: revealMiddle linear;
+        animation-timeline: view();
+    }
+
+    img:nth-child(5) {
+        animation: revealLast linear;
+        animation-timeline: view();
+    }
+}
+
+@keyframes revealFirst {
+    30% {scale: 1; opacity: 1;}
+
+    60% { opacity: 1;}
+
+    90% {scale: 0.5; opacity: 0;}
+}
+
+@keyframes revealMiddle {
+    0% {scale: 0.8; opacity: 0;}
+
+    20% {scale: 1; opacity: 1;}
+
+    60% {opacity: 1;}
+
+    100% {scale: 0.5; opacity: 0;}
+}
+
+@keyframes revealLast {
+    0% {scale: 0.5; opacity: 0;}
+
+    30% {scale: 1; opacity: 1;}
+}

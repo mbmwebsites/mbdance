@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+input {
+  display: none;
+  visibility: hidden;
+}
+
+#photoMain {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#photoContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  transition: 0.8s;
+  background-image: linear-gradient(to right, #fff, #DFDFDF);
+  box-shadow: 0 0 20px #181818;
+  padding: 2% 0 0 0;
+}
+#photoContent #input1:empty ~ #img1,
+#photoContent #input2:empty ~ #img2,
+#photoContent #input3:empty ~ #img3,
+#photoContent #input4:empty ~ #img4,
+#photoContent #input5:empty ~ #img5,
+#photoContent #input6:empty ~ #img6,
+#photoContent #input7:empty ~ #img7,
+#photoContent #input8:empty ~ #img8,
+#photoContent #input9:empty ~ #img9,
+#photoContent #input10:empty ~ #img10,
+#photoContent #input11:empty ~ #img11,
+#photoContent #input12:empty ~ #img12,
+#photoContent #input13:empty ~ #img13,
+#photoContent #input14:empty ~ #img14,
+#photoContent #input15:empty ~ #img15 {
+  padding: unset;
+  background-image: unset;
+}
+#photoContent #input1:checked ~ #img1,
+#photoContent #input2:checked ~ #img2,
+#photoContent #input3:checked ~ #img3,
+#photoContent #input4:checked ~ #img4,
+#photoContent #input5:checked ~ #img5,
+#photoContent #input6:checked ~ #img6,
+#photoContent #input7:checked ~ #img7,
+#photoContent #input8:checked ~ #img8,
+#photoContent #input9:checked ~ #img9,
+#photoContent #input10:checked ~ #img10,
+#photoContent #input11:checked ~ #img11,
+#photoContent #input12:checked ~ #img12,
+#photoContent #input13:checked ~ #img13,
+#photoContent #input14:checked ~ #img14,
+#photoContent #input15:checked ~ #img15 {
+  position: absolute;
+  margin: auto;
+  padding: 40% 50%;
+  background-image: linear-gradient(to right, #ffffff, #DFDFDF);
+  box-sizing: border-box;
+}
+#photoContent #input1:checked ~ #img1 img,
+#photoContent #input2:checked ~ #img2 img,
+#photoContent #input3:checked ~ #img3 img,
+#photoContent #input4:checked ~ #img4 img,
+#photoContent #input5:checked ~ #img5 img,
+#photoContent #input6:checked ~ #img6 img,
+#photoContent #input7:checked ~ #img7 img,
+#photoContent #input8:checked ~ #img8 img,
+#photoContent #input9:checked ~ #img9 img,
+#photoContent #input10:checked ~ #img10 img,
+#photoContent #input11:checked ~ #img11 img,
+#photoContent #input12:checked ~ #img12 img,
+#photoContent #input13:checked ~ #img13 img,
+#photoContent #input14:checked ~ #img14 img,
+#photoContent #input15:checked ~ #img15 img {
+  position: absolute;
+  top: 0;
+  left: 25%;
+  width: 50%;
+}
+#photoContent label {
+  width: 25%;
+  transition: 0.8s;
+  margin: 1%;
+  cursor: pointer;
+}
+#photoContent label img {
+  width: 100%;
+  box-shadow: 5px 5px 8px #181818;
+  cursor: pointer;
+}/*# sourceMappingURL=photopage.css.map */

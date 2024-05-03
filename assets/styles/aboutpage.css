@@ -1,0 +1,51 @@
+#aboutMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: clamp(20px, 2%, 2rem) auto;
+  font-family: "Kanit", sans-serif;
+}
+#aboutMain h2 {
+  width: 80%;
+  color: #285480;
+  font-size: 42px;
+  margin: 0 0 2% 0;
+  text-shadow: 0.5px 0.5px 0px #181818;
+}
+#aboutMain img {
+  width: 55%;
+  height: 55%;
+  border: 4px solid #181818;
+}
+
+#aboutContent {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#aboutText {
+  width: 40%;
+  width: unset;
+}
+#aboutText p {
+  font-size: 18px;
+  line-height: 30px;
+  color: #285480;
+  text-shadow: 0.5px 0.5px 0px #181818;
+}
+
+@media screen and (max-width: 1280px) {
+  #aboutMain h2 {
+    width: unset;
+    text-align: center;
+  }
+  #aboutMain img {
+    width: 100%;
+    margin: 4% 0;
+  }
+  #aboutContent {
+    flex-direction: column;
+    align-items: center;
+  }
+}/*# sourceMappingURL=aboutpage.css.map */

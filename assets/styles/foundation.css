@@ -1,0 +1,273 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*FONTS*/
+/*font-family: 'Kanit', sans-serif;*/
+/*font-family: 'Zilla Slab', serif;*/
+html {
+  min-height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  background-image: linear-gradient(to right, #ffffff, #DFDFDF);
+}
+body header {
+  padding: clamp(15px, 2%, 2rem) 0;
+  border-bottom: 2px solid #181818;
+  background-image: linear-gradient(to top right, #285480, #01207C);
+  background-image: linear-gradient(to top right, #285480, #01207C);
+}
+body header img {
+  width: clamp(250px, 50%, 50rem);
+}
+
+#indexHeader {
+  padding: clamp(15px, 2%, 2rem) 0;
+}
+
+#navHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+#navHeader h1 {
+  margin: 0 25% 0 35%;
+}
+
+#topHead {
+  display: flex;
+  flex-direction: row;
+}
+
+#menu {
+  display: none;
+}
+
+#burger {
+  padding: 0 min(15px, 3%);
+  margin: 0 2%;
+  font-size: 68px;
+  color: #DFDFDF;
+  font-weight: bold;
+  border: 4px solid #DFDFDF;
+  box-shadow: 5px 5px 10px #181818;
+  transition: 0.6s;
+}
+
+#burger:hover {
+  cursor: pointer;
+}
+
+#burger:checked {
+  box-shadow: -5px -5px 10px #181818;
+}
+
+#nav {
+  display: none;
+}
+
+#menu:checked ~ #navHeader #burger {
+  rotate: 270deg;
+  box-shadow: -5px -5px 10px #181818;
+}
+
+#menu:checked ~ #navHeader #nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Kanit", sans-serif;
+}
+#menu:checked ~ #navHeader #nav ul {
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+#menu:checked ~ #navHeader #nav ul li {
+  list-style-type: none;
+  margin: 6% 0;
+  width: 100%;
+  transition: 0.5s;
+}
+#menu:checked ~ #navHeader #nav ul li a {
+  display: block;
+  text-decoration: none;
+  font-size: 28px;
+  padding: 16% 0;
+  color: #DFDFDF;
+  text-align: center;
+  transition: 0.6s;
+}
+#menu:checked ~ #navHeader #nav ul li a:hover {
+  border: 4px solid #DFDFDF;
+  box-shadow: 5px 5px 10px #181818;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+}
+h1 a {
+  display: flex;
+  justify-content: center;
+}
+h1 img {
+  width: 50%;
+  transition: 0.8s;
+  -moz-filter: drop-shadow(12px 12px 10px rgba(0, 0, 0, 0.4));
+  -ms-filter: drop-shadow(12px 12px 10px rgba(0, 0, 0, 0.4));
+  -o-filter: drop-shadow(12px 12px 10px rgba(0, 0, 0, 0.4));
+  filter: drop-shadow(12px 12px 5px rgba(0, 0, 0, 0.4));
+}
+h1 img:hover {
+  -moz-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.4)) brightness(110%);
+  -ms-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.4)) brightness(110%);
+  -o-filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.4)) brightness(110%);
+  filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.4)) brightness(110%);
+}
+
+#lightingLogo {
+  width: 65%;
+}
+
+footer {
+  position: relative;
+  flex-shrink: 0;
+  color: #DFDFDF;
+  background-image: linear-gradient(to bottom right, #285480, #01207C);
+}
+footer nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: clamp(10px, 1%, 3%) 0;
+  border-top: 2px solid #181818;
+}
+footer nav ul, footer nav div {
+  margin: clamp(10px, 1%, 3%) 0;
+}
+footer nav ul {
+  width: clamp(275px, 80%, 60rem);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+footer nav ul li {
+  transition: 0.5s;
+}
+footer nav ul li img {
+  transition: 0.6s;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px #181818;
+}
+footer nav ul li img:hover {
+  box-shadow: -3px 3px 5px #181818;
+  box-shadow: none;
+}
+footer div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  width: clamp(250px, 35%, 50rem);
+}
+footer div a {
+  display: flex;
+  text-decoration: none;
+  font-style: italic;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "Kanit", serif;
+  color: #01207C;
+  padding: 4% 8%;
+  border: 2px solid #181818;
+  background-color: #DFDFDF;
+  transition: 0.8s;
+}
+footer div a:hover {
+  color: #DFDFDF;
+  background-color: transparent;
+  border: 4px solid #DFDFDF;
+  box-shadow: 5px 5px 10px #181818;
+}
+
+@media screen and (max-width: 1024px) {
+  #navHeader h1 {
+    margin: 0 22% 0 35%;
+  }
+}
+@media screen and (max-width: 540px) {
+  #topHead {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #topHead h1 {
+    margin: 0;
+  }
+  #topHead label {
+    width: 28px;
+    margin: 5% 0 1% 0;
+    font-size: 48px;
+    padding: 0 10px;
+  }
+  #menu:checked ~ #navHeader #nav ul {
+    width: unset;
+  }
+}/*# sourceMappingURL=foundation.css.map */

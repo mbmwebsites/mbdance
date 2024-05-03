@@ -1,0 +1,314 @@
+input {
+  display: none;
+  visibility: hidden;
+}
+
+#photoMain {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 5;
+}
+
+#heroImage {
+  overflow: hidden;
+}
+#heroImage img {
+  width: 100%;
+  transform: translateY(20%) scale(1.4);
+  transform-origin: right;
+}
+
+#photoContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  transition: 0.8s;
+  background-image: linear-gradient(to right, #fff, #DFDFDF);
+  box-shadow: 0 -10px 20px #181818;
+  padding: 2% 0 0 0;
+}
+#photoContent #input1:checked ~ #img1,
+#photoContent #input2:checked ~ #img2,
+#photoContent #input3:checked ~ #img3,
+#photoContent #input4:checked ~ #img4,
+#photoContent #input5:checked ~ #img5,
+#photoContent #input6:checked ~ #img6,
+#photoContent #input7:checked ~ #img7,
+#photoContent #input8:checked ~ #img8,
+#photoContent #input9:checked ~ #img9,
+#photoContent #input10:checked ~ #img10,
+#photoContent #input11:checked ~ #img11,
+#photoContent #input12:checked ~ #img12,
+#photoContent #input13:checked ~ #img13,
+#photoContent #input14:checked ~ #img14,
+#photoContent #input15:checked ~ #img15 {
+  position: absolute;
+  margin: auto;
+  padding: 40% 50%;
+  background-image: linear-gradient(to right, #ffffff, #DFDFDF);
+  box-sizing: border-box;
+  box-shadow: 0 0 20px #181818;
+}
+#photoContent #input1:checked ~ #img1 img,
+#photoContent #input2:checked ~ #img2 img,
+#photoContent #input3:checked ~ #img3 img,
+#photoContent #input4:checked ~ #img4 img,
+#photoContent #input5:checked ~ #img5 img,
+#photoContent #input6:checked ~ #img6 img,
+#photoContent #input7:checked ~ #img7 img,
+#photoContent #input8:checked ~ #img8 img,
+#photoContent #input9:checked ~ #img9 img,
+#photoContent #input10:checked ~ #img10 img,
+#photoContent #input11:checked ~ #img11 img,
+#photoContent #input12:checked ~ #img12 img,
+#photoContent #input13:checked ~ #img13 img,
+#photoContent #input14:checked ~ #img14 img,
+#photoContent #input15:checked ~ #img15 img {
+  margin: 5% 0;
+  position: absolute;
+  top: 0;
+  left: 25%;
+  width: 50%;
+}
+#photoContent #input1:checked ~ #img2,
+#photoContent #input1:checked ~ #img3,
+#photoContent #input1:checked ~ #img4,
+#photoContent #input1:checked ~ #img5,
+#photoContent #input1:checked ~ #img6,
+#photoContent #input1:checked ~ #img7,
+#photoContent #input1:checked ~ #img8,
+#photoContent #input1:checked ~ #img9,
+#photoContent #input1:checked ~ #img10,
+#photoContent #input1:checked ~ #img11,
+#photoContent #input1:checked ~ #img12,
+#photoContent #input1:checked ~ #img13,
+#photoContent #input1:checked ~ #img14,
+#photoContent #input1:checked ~ #img15,
+#photoContent #input2:checked ~ #img1,
+#photoContent #input2:checked ~ #img3,
+#photoContent #input2:checked ~ #img4,
+#photoContent #input2:checked ~ #img5,
+#photoContent #input2:checked ~ #img6,
+#photoContent #input2:checked ~ #img7,
+#photoContent #input2:checked ~ #img8,
+#photoContent #input2:checked ~ #img9,
+#photoContent #input2:checked ~ #img10,
+#photoContent #input2:checked ~ #img11,
+#photoContent #input2:checked ~ #img12,
+#photoContent #input2:checked ~ #img13,
+#photoContent #input2:checked ~ #img14,
+#photoContent #input2:checked ~ #img15,
+#photoContent #input3:checked ~ #img1,
+#photoContent #input3:checked ~ #img2,
+#photoContent #input3:checked ~ #img4,
+#photoContent #input3:checked ~ #img5,
+#photoContent #input3:checked ~ #img6,
+#photoContent #input3:checked ~ #img7,
+#photoContent #input3:checked ~ #img8,
+#photoContent #input3:checked ~ #img9,
+#photoContent #input3:checked ~ #img10,
+#photoContent #input3:checked ~ #img11,
+#photoContent #input3:checked ~ #img12,
+#photoContent #input3:checked ~ #img13,
+#photoContent #input3:checked ~ #img14,
+#photoContent #input3:checked ~ #img15,
+#photoContent #input4:checked ~ #img1,
+#photoContent #input4:checked ~ #img2,
+#photoContent #input4:checked ~ #img3,
+#photoContent #input4:checked ~ #img5,
+#photoContent #input4:checked ~ #img6,
+#photoContent #input4:checked ~ #img7,
+#photoContent #input4:checked ~ #img8,
+#photoContent #input4:checked ~ #img9,
+#photoContent #input4:checked ~ #img10,
+#photoContent #input4:checked ~ #img11,
+#photoContent #input4:checked ~ #img12,
+#photoContent #input4:checked ~ #img13,
+#photoContent #input4:checked ~ #img14,
+#photoContent #input4:checked ~ #img15,
+#photoContent #input5:checked ~ #img1,
+#photoContent #input5:checked ~ #img2,
+#photoContent #input5:checked ~ #img3,
+#photoContent #input5:checked ~ #img4,
+#photoContent #input5:checked ~ #img6,
+#photoContent #input5:checked ~ #img7,
+#photoContent #input5:checked ~ #img8,
+#photoContent #input5:checked ~ #img9,
+#photoContent #input5:checked ~ #img10,
+#photoContent #input5:checked ~ #img11,
+#photoContent #input5:checked ~ #img12,
+#photoContent #input5:checked ~ #img13,
+#photoContent #input5:checked ~ #img14,
+#photoContent #input5:checked ~ #img15,
+#photoContent #input6:checked ~ #img1,
+#photoContent #input6:checked ~ #img2,
+#photoContent #input6:checked ~ #img3,
+#photoContent #input6:checked ~ #img4,
+#photoContent #input6:checked ~ #img5,
+#photoContent #input6:checked ~ #img7,
+#photoContent #input6:checked ~ #img8,
+#photoContent #input6:checked ~ #img9,
+#photoContent #input6:checked ~ #img10,
+#photoContent #input6:checked ~ #img11,
+#photoContent #input6:checked ~ #img12,
+#photoContent #input6:checked ~ #img13,
+#photoContent #input6:checked ~ #img14,
+#photoContent #input6:checked ~ #img15,
+#photoContent #input7:checked ~ #img1,
+#photoContent #input7:checked ~ #img2,
+#photoContent #input7:checked ~ #img3,
+#photoContent #input7:checked ~ #img4,
+#photoContent #input7:checked ~ #img5,
+#photoContent #input7:checked ~ #img6,
+#photoContent #input7:checked ~ #img8,
+#photoContent #input7:checked ~ #img9,
+#photoContent #input7:checked ~ #img10,
+#photoContent #input7:checked ~ #img11,
+#photoContent #input7:checked ~ #img12,
+#photoContent #input7:checked ~ #img13,
+#photoContent #input7:checked ~ #img14,
+#photoContent #input7:checked ~ #img15,
+#photoContent #input8:checked ~ #img1,
+#photoContent #input8:checked ~ #img2,
+#photoContent #input8:checked ~ #img3,
+#photoContent #input8:checked ~ #img4,
+#photoContent #input8:checked ~ #img5,
+#photoContent #input8:checked ~ #img6,
+#photoContent #input8:checked ~ #img7,
+#photoContent #input8:checked ~ #img9,
+#photoContent #input8:checked ~ #img10,
+#photoContent #input8:checked ~ #img11,
+#photoContent #input8:checked ~ #img12,
+#photoContent #input8:checked ~ #img13,
+#photoContent #input8:checked ~ #img14,
+#photoContent #input8:checked ~ #img15,
+#photoContent #input9:checked ~ #img1,
+#photoContent #input9:checked ~ #img2,
+#photoContent #input9:checked ~ #img3,
+#photoContent #input9:checked ~ #img4,
+#photoContent #input9:checked ~ #img5,
+#photoContent #input9:checked ~ #img6,
+#photoContent #input9:checked ~ #img7,
+#photoContent #input9:checked ~ #img8,
+#photoContent #input9:checked ~ #img10,
+#photoContent #input9:checked ~ #img11,
+#photoContent #input9:checked ~ #img12,
+#photoContent #input9:checked ~ #img13,
+#photoContent #input9:checked ~ #img14,
+#photoContent #input9:checked ~ #img15,
+#photoContent #input10:checked ~ #img1,
+#photoContent #input10:checked ~ #img2,
+#photoContent #input10:checked ~ #img3,
+#photoContent #input10:checked ~ #img4,
+#photoContent #input10:checked ~ #img5,
+#photoContent #input10:checked ~ #img6,
+#photoContent #input10:checked ~ #img7,
+#photoContent #input10:checked ~ #img8,
+#photoContent #input10:checked ~ #img9,
+#photoContent #input10:checked ~ #img11,
+#photoContent #input10:checked ~ #img12,
+#photoContent #input10:checked ~ #img13,
+#photoContent #input10:checked ~ #img14,
+#photoContent #input10:checked ~ #img15,
+#photoContent #input11:checked ~ #img1,
+#photoContent #input11:checked ~ #img2,
+#photoContent #input11:checked ~ #img3,
+#photoContent #input11:checked ~ #img4,
+#photoContent #input11:checked ~ #img5,
+#photoContent #input11:checked ~ #img6,
+#photoContent #input11:checked ~ #img7,
+#photoContent #input11:checked ~ #img8,
+#photoContent #input11:checked ~ #img9,
+#photoContent #input11:checked ~ #img10,
+#photoContent #input11:checked ~ #img12,
+#photoContent #input11:checked ~ #img13,
+#photoContent #input11:checked ~ #img14,
+#photoContent #input11:checked ~ #img15,
+#photoContent #input12:checked ~ #img1,
+#photoContent #input12:checked ~ #img2,
+#photoContent #input12:checked ~ #img3,
+#photoContent #input12:checked ~ #img4,
+#photoContent #input12:checked ~ #img5,
+#photoContent #input12:checked ~ #img6,
+#photoContent #input12:checked ~ #img7,
+#photoContent #input12:checked ~ #img8,
+#photoContent #input12:checked ~ #img9,
+#photoContent #input12:checked ~ #img10,
+#photoContent #input12:checked ~ #img11,
+#photoContent #input12:checked ~ #img13,
+#photoContent #input12:checked ~ #img14,
+#photoContent #input12:checked ~ #img15,
+#photoContent #input13:checked ~ #img1,
+#photoContent #input13:checked ~ #img2,
+#photoContent #input13:checked ~ #img3,
+#photoContent #input13:checked ~ #img4,
+#photoContent #input13:checked ~ #img5,
+#photoContent #input13:checked ~ #img6,
+#photoContent #input13:checked ~ #img7,
+#photoContent #input13:checked ~ #img8,
+#photoContent #input13:checked ~ #img9,
+#photoContent #input13:checked ~ #img10,
+#photoContent #input13:checked ~ #img11,
+#photoContent #input13:checked ~ #img12,
+#photoContent #input13:checked ~ #img14,
+#photoContent #input13:checked ~ #img15,
+#photoContent #input14:checked ~ #img1,
+#photoContent #input14:checked ~ #img2,
+#photoContent #input14:checked ~ #img3,
+#photoContent #input14:checked ~ #img4,
+#photoContent #input14:checked ~ #img5,
+#photoContent #input14:checked ~ #img6,
+#photoContent #input14:checked ~ #img7,
+#photoContent #input14:checked ~ #img8,
+#photoContent #input14:checked ~ #img9,
+#photoContent #input14:checked ~ #img10,
+#photoContent #input14:checked ~ #img11,
+#photoContent #input14:checked ~ #img12,
+#photoContent #input14:checked ~ #img13,
+#photoContent #input14:checked ~ #img15,
+#photoContent #input15:checked ~ #img1,
+#photoContent #input15:checked ~ #img2,
+#photoContent #input15:checked ~ #img3,
+#photoContent #input15:checked ~ #img4,
+#photoContent #input15:checked ~ #img5,
+#photoContent #input15:checked ~ #img6,
+#photoContent #input15:checked ~ #img7,
+#photoContent #input15:checked ~ #img8,
+#photoContent #input15:checked ~ #img9,
+#photoContent #input15:checked ~ #img10,
+#photoContent #input15:checked ~ #img11,
+#photoContent #input15:checked ~ #img12,
+#photoContent #input15:checked ~ #img13,
+#photoContent #input15:checked ~ #img14 {
+  display: none;
+}
+#photoContent #input1:checked ~ label #img1,
+#photoContent #input2:checked ~ label #img2,
+#photoContent #input3:checked ~ label #img3,
+#photoContent #input4:checked ~ label #img4,
+#photoContent #input5:checked ~ label #img5,
+#photoContent #input6:checked ~ label #img6,
+#photoContent #input7:checked ~ label #img7,
+#photoContent #input8:checked ~ label #img8,
+#photoContent #input9:checked ~ label #img9,
+#photoContent #input10:checked ~ label #img10,
+#photoContent #input11:checked ~ label #img11,
+#photoContent #input12:checked ~ label #img12,
+#photoContent #input13:checked ~ label #img13,
+#photoContent #input14:checked ~ label #img14,
+#photoContent #input15:checked ~ label #img15 {
+  transform: rotate(60deg);
+}
+#photoContent label {
+  width: 25%;
+  transition: 0.8s;
+  margin: 1%;
+  cursor: pointer;
+}
+#photoContent label img {
+  width: 100%;
+  box-shadow: 5px 5px 8px #181818;
+  cursor: pointer;
+}/*# sourceMappingURL=usingscroll.css.map */
