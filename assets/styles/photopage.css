@@ -14,6 +14,31 @@ input {
   flex-direction: column;
   align-items: center;
 }
+#photoMain #heroImage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 95%;
+  margin: 2.5% 0 0 0;
+}
+#photoMain #heroImage img {
+  width: 100%;
+  border: 8px groove #181818;
+}
+
+#credits {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+#credits p {
+  font-style: italic;
+  color: #285480;
+  font-size: 18px;
+  text-shadow: 0.5px 0.5px 0px #181818;
+  font-family: "Kanit", serif;
+}
 
 #photoContent {
   display: flex;
@@ -21,8 +46,7 @@ input {
   justify-content: space-around;
   transition: 0.8s;
   background-image: linear-gradient(to right, #fff, #DFDFDF);
-  box-shadow: 0 0 20px #181818;
-  padding: 2% 0 0 0;
+  margin: 0 0 2% 0;
 }
 #photoContent #input1:empty ~ #img1,
 #photoContent #input2:empty ~ #img2,

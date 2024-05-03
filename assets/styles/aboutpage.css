@@ -12,21 +12,27 @@
   margin: 0 0 2% 0;
   text-shadow: 0.5px 0.5px 0px #181818;
 }
-#aboutMain img {
-  width: 55%;
-  height: 55%;
-  border: 4px solid #181818;
-}
 
 #aboutContent {
   width: 80%;
   display: flex;
   justify-content: space-between;
 }
+#aboutContent figure {
+  width: 60%;
+}
+#aboutContent figure img {
+  width: 100%;
+  box-shadow: 5px 5px 8px #181818;
+}
+#aboutContent figure figcaption {
+  margin: 10px 0 0 0;
+  font-style: italic;
+}
 
 #aboutText {
   width: 40%;
-  width: unset;
+  margin: 0 20px 0 0;
 }
 #aboutText p {
   font-size: 18px;

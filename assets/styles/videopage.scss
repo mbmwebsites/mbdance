@@ -10,7 +10,7 @@ $textColor: #01207C;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 2% auto;
+    margin: 1% auto;
     font-family: 'Kanit', sans-serif;
     // background-color: red;
 
@@ -32,30 +32,33 @@ $textColor: #01207C;
     align-items: center;
 
     .reel {
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 0 0 2% 0;
+        margin: 2% 0 4% 0;
+        // background-color: #ffffff;
+        // padding: 4%;
+        // border: 2px solid #000;
+        // box-shadow: 5px 5px 8px $black;
 
         h2 {
-            width: 50%;
+            width: 100%;
             color: $primary;
-            font-size: 42px;
-            // margin: 0 0 2% 0;
+            font-size: 48px;
+            margin: 0 0 2% 0;
             text-align: center;
             text-shadow: 0.5px 0.5px 0px $black;
-            }
-    }
+        }
 
-    video {
-        width: 50%;
-        // width: 55%;
-        // width: 350px;
-        // width: clamp(250px, 80%, 60rem);
-        // width: 20%;
-        margin: 1% 0;
-        border: 2px solid $black;
-        box-shadow: 5px 5px 8px $black;
+        iframe {
+            width: 800px;
+            height: 450px;
+            // width: 55%;
+            // width: 350px;
+            // width: clamp(250px, 80%, 60rem);
+            border: 2px solid $black;
+            box-shadow: 5px 5px 8px $black;
+        }
     }
-
 }

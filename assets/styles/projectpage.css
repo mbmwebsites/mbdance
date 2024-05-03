@@ -3,34 +3,38 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 2% auto;
+  margin: 1% 0;
   font-family: "Kanit", sans-serif;
 }
 
 #projectContent {
+  width: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 #projectContent .project {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 0 2% 0;
+  margin: 5% 0;
 }
 #projectContent .project h2 {
-  width: 50%;
+  width: 100%;
   color: #285480;
   font-size: 48px;
   text-align: center;
+  margin: 0 0 2% 0;
   text-shadow: 0.5px 0.5px 0px #181818;
 }
-#projectContent .project video {
-  width: 50%;
-  margin: 1% 0;
+#projectContent .project iframe {
+  width: 800px;
+  height: 450px;
   border: 2px solid #181818;
   box-shadow: 5px 5px 8px #181818;
 }
 #projectContent .project p {
   font-size: 28px;
+  margin: 3% 0 0 0;
 }/*# sourceMappingURL=projectpage.css.map */
