@@ -40,15 +40,16 @@
     </div> -->
 
     <main id="photoMain">
-        <!-- <h2>PHOTOS</h2> -->
+        <input type="checkbox" id="more">
 
-        <div id="heroImage">
+        <picture id="heroImage">
+            <source media="(max-width: 600px)" srcset="../assets/images/MattBishop.jpg">
             <img src="../assets/images/LinkedInCOVER.jpg" alt="">
-        </div>
+        </picture>
 
         <div id="credits">
-            <p>Banner image by <a href="https://www.instagram.com/faithehalephoto/">Faith Hale Photo</a></p>
-            <p>Action shots by <a href="https://www.machmermedia.com/">Machmer Media</a></p>
+            <p>Banner image by&nbsp;<a href="https://www.instagram.com/faithehalephoto/">Faith Hale Photo</a></p>
+            <p>Action shots by&nbsp;<a href="https://www.machmermedia.com/">Machmer Media</a></p>
         </div>
 
         <div id="photoContent">
@@ -76,6 +77,7 @@
                 <img src="../assets/images/MachmerMedia_MattBishop-2.jpg" alt="">
             </label> -->
 
+            <div id="photos">
             <label id="img3" for="input3">
                 <img src="../assets/images/MachmerMedia_MattBishop-4.jpg" alt="">
             </label>
@@ -100,23 +102,23 @@
                 <img src="../assets/images/MachmerMedia_MattBishop-9.jpg" alt="">
             </label>
 
-            <label id="img9" for="input9">
+            <label class="more" id="img9" for="input9">
                 <img src="../assets/images/MachmerMedia_MattBishop-10.jpg" alt="">
             </label>
 
-            <label id="img10" for="input10">
+            <label class="more" id="img10" for="input10">
                 <img src="../assets/images/MachmerMedia_MattBishop-11.jpg" alt="">
             </label>
 
-            <label id="img11" for="input11">
+            <label class="more" id="img11" for="input11">
                 <img src="../assets/images/MachmerMedia_MattBishop-12.jpg" alt="">
             </label>
 
-            <label id="img12" for="input12">
+            <label class="more" id="img12" for="input12">
                 <img src="../assets/images/MachmerMedia_MattBishop-13.jpg" alt="">
             </label>
 
-            <label id="img13" for="input13">
+            <label class="more" id="img13" for="input13">
                 <img src="../assets/images/MachmerMedia_MattBishop-14.jpg" alt="">
             </label>
 
@@ -124,7 +126,7 @@
                 <img src="../assets/images/MachmerMedia_MattBishop-15.jpg" alt="">
             </label> -->
             
-            <label id="img15" for="input15">
+            <label class="more" id="img15" for="input15">
                 <img src="../assets/images/MachmerMedia_MattBishop-16.jpg" alt="">
             </label>
                 <!-- <img src="https://unsplash.it/540/400?image=500" alt="">
@@ -147,6 +149,10 @@
                 <li><img src="https://unsplash.it/640" alt=""></li>
                 <li><img src="https://unsplash.it/640" alt=""></li>
                 <li><img src="https://unsplash.it/640" alt=""></li> -->
+            </div>
+
+            <label for="more" id="more" class="moreLabel">See more...</label>
+            <label for="more" id="more" class="lessLabel">See less...</label>
         </div>
     </main>
 
