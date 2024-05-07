@@ -182,10 +182,6 @@ h1 img:hover {
   filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.4)) brightness(110%);
 }
 
-#lightingLogo {
-  width: 65%;
-}
-
 footer {
   position: relative;
   flex-shrink: 0;

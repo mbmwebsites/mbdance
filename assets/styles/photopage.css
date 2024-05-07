@@ -25,6 +25,27 @@ input {
   width: 100%;
   border: 8px groove #181818;
 }
+#photoMain .moreLabel,
+#photoMain .lessLabel {
+  display: none;
+}
+#photoMain #more {
+  text-align: center;
+  font-size: 32px;
+  padding: 10px;
+  border: solid 4px transparent;
+  background-color: #285480;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.6s;
+  margin: 20px 0 0 0;
+  font-family: Kanit, serif;
+  background-image: linear-gradient(to bottom right, #01207C, #285480);
+  box-shadow: 2px 2px 5px #181818;
+}
+#photoMain #more:hover {
+  box-shadow: 5px 5px 10px #285480, -2px -2px 10px #01207C;
+}
 
 #credits {
   width: 90%;
@@ -38,8 +59,74 @@ input {
   text-shadow: 0.5px 0.5px 0px #181818;
   font-family: "Kanit", serif;
 }
+#credits p:nth-child(2) {
+  display: flex;
+  justify-content: flex-end;
+}
 
-#photoContent {
+@media screen and (min-width: 600px) {
+  #input1:empty ~ #photos #img1,
+  #input2:empty ~ #photos #img2,
+  #input3:empty ~ #photos #img3,
+  #input4:empty ~ #photos #img4,
+  #input5:empty ~ #photos #img5,
+  #input6:empty ~ #photos #img6,
+  #input7:empty ~ #photos #img7,
+  #input8:empty ~ #photos #img8,
+  #input9:empty ~ #photos #img9,
+  #input10:empty ~ #photos #img10,
+  #input11:empty ~ #photos #img11,
+  #input12:empty ~ #photos #img12,
+  #input13:empty ~ #photos #img13,
+  #input14:empty ~ #photos #img14,
+  #input15:empty ~ #photos #img15 {
+    padding: unset;
+    background-image: unset;
+  }
+  #input1:checked ~ #photos #img1,
+  #input2:checked ~ #photos #img2,
+  #input3:checked ~ #photos #img3,
+  #input4:checked ~ #photos #img4,
+  #input5:checked ~ #photos #img5,
+  #input6:checked ~ #photos #img6,
+  #input7:checked ~ #photos #img7,
+  #input8:checked ~ #photos #img8,
+  #input9:checked ~ #photos #img9,
+  #input10:checked ~ #photos #img10,
+  #input11:checked ~ #photos #img11,
+  #input12:checked ~ #photos #img12,
+  #input13:checked ~ #photos #img13,
+  #input14:checked ~ #photos #img14,
+  #input15:checked ~ #photos #img15 {
+    width: 100%;
+    position: absolute;
+    margin: auto;
+    padding: 40% 50%;
+    background-image: linear-gradient(to right, #ffffff, #DFDFDF);
+    box-sizing: border-box;
+  }
+  #input1:checked ~ #photos #img1 img,
+  #input2:checked ~ #photos #img2 img,
+  #input3:checked ~ #photos #img3 img,
+  #input4:checked ~ #photos #img4 img,
+  #input5:checked ~ #photos #img5 img,
+  #input6:checked ~ #photos #img6 img,
+  #input7:checked ~ #photos #img7 img,
+  #input8:checked ~ #photos #img8 img,
+  #input9:checked ~ #photos #img9 img,
+  #input10:checked ~ #photos #img10 img,
+  #input11:checked ~ #photos #img11 img,
+  #input12:checked ~ #photos #img12 img,
+  #input13:checked ~ #photos #img13 img,
+  #input14:checked ~ #photos #img14 img,
+  #input15:checked ~ #photos #img15 img {
+    position: absolute;
+    top: 0;
+    left: 25%;
+    width: 50%;
+  }
+}
+#photoContent #photos {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -47,73 +134,62 @@ input {
   background-image: linear-gradient(to right, #fff, #DFDFDF);
   margin: 0 0 2% 0;
 }
-#photoContent #input1:empty ~ #img1,
-#photoContent #input2:empty ~ #img2,
-#photoContent #input3:empty ~ #img3,
-#photoContent #input4:empty ~ #img4,
-#photoContent #input5:empty ~ #img5,
-#photoContent #input6:empty ~ #img6,
-#photoContent #input7:empty ~ #img7,
-#photoContent #input8:empty ~ #img8,
-#photoContent #input9:empty ~ #img9,
-#photoContent #input10:empty ~ #img10,
-#photoContent #input11:empty ~ #img11,
-#photoContent #input12:empty ~ #img12,
-#photoContent #input13:empty ~ #img13,
-#photoContent #input14:empty ~ #img14,
-#photoContent #input15:empty ~ #img15 {
-  padding: unset;
-  background-image: unset;
-}
-#photoContent #input1:checked ~ #img1,
-#photoContent #input2:checked ~ #img2,
-#photoContent #input3:checked ~ #img3,
-#photoContent #input4:checked ~ #img4,
-#photoContent #input5:checked ~ #img5,
-#photoContent #input6:checked ~ #img6,
-#photoContent #input7:checked ~ #img7,
-#photoContent #input8:checked ~ #img8,
-#photoContent #input9:checked ~ #img9,
-#photoContent #input10:checked ~ #img10,
-#photoContent #input11:checked ~ #img11,
-#photoContent #input12:checked ~ #img12,
-#photoContent #input13:checked ~ #img13,
-#photoContent #input14:checked ~ #img14,
-#photoContent #input15:checked ~ #img15 {
-  position: absolute;
-  margin: auto;
-  padding: 40% 50%;
-  background-image: linear-gradient(to right, #ffffff, #DFDFDF);
-  box-sizing: border-box;
-}
-#photoContent #input1:checked ~ #img1 img,
-#photoContent #input2:checked ~ #img2 img,
-#photoContent #input3:checked ~ #img3 img,
-#photoContent #input4:checked ~ #img4 img,
-#photoContent #input5:checked ~ #img5 img,
-#photoContent #input6:checked ~ #img6 img,
-#photoContent #input7:checked ~ #img7 img,
-#photoContent #input8:checked ~ #img8 img,
-#photoContent #input9:checked ~ #img9 img,
-#photoContent #input10:checked ~ #img10 img,
-#photoContent #input11:checked ~ #img11 img,
-#photoContent #input12:checked ~ #img12 img,
-#photoContent #input13:checked ~ #img13 img,
-#photoContent #input14:checked ~ #img14 img,
-#photoContent #input15:checked ~ #img15 img {
-  position: absolute;
-  top: 0;
-  left: 25%;
-  width: 50%;
-}
-#photoContent label {
+#photoContent #photos label {
   width: 25%;
   transition: 0.8s;
   margin: 1%;
   cursor: pointer;
 }
-#photoContent label img {
+#photoContent #photos label img {
   width: 100%;
   box-shadow: 5px 5px 8px #181818;
   cursor: pointer;
+}
+
+@media screen and (max-width: 400px) and (max-height: 900px) and (min-height: 800px) {
+  #photoMain {
+    width: 97%;
+  }
+}
+@media screen and (max-width: 600px) {
+  #photoMain #heroImage {
+    width: 90%;
+  }
+  #credits {
+    flex-direction: column;
+    text-align: center;
+  }
+  #credits p:nth-child(2) {
+    display: unset;
+  }
+  #more:checked ~ #photoContent .more, #more:checked ~ #photoContent .lessLabel {
+    display: block;
+  }
+  #more:checked ~ #photoContent .moreLabel {
+    display: none;
+  }
+  .more {
+    display: none;
+  }
+  #photoContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #photoContent #more {
+    margin: 0 0 5% 0;
+  }
+  #photoContent .moreLabel {
+    width: auto;
+    display: block;
+  }
+  #photoContent #photos label {
+    width: 90%;
+    margin: 2% 0 5% 0;
+    cursor: unset;
+  }
+  #photoContent #photos label img {
+    cursor: unset;
+  }
 }/*# sourceMappingURL=photopage.css.map */
