@@ -16,29 +16,110 @@
 #aboutContent {
   width: 80%;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: space-between;
 }
-#aboutContent figure {
-  width: 60%;
-}
-#aboutContent figure img {
-  width: 100%;
-  box-shadow: 5px 5px 8px #181818;
-}
-#aboutContent figure figcaption {
-  margin: 10px 0 0 0;
-  font-style: italic;
-}
-
-#aboutText {
-  width: 40%;
-  margin: 0 20px 0 0;
-}
-#aboutText p {
+#aboutContent #bioContent p {
   font-size: 18px;
   line-height: 30px;
   color: #285480;
   text-shadow: 0.5px 0.5px 0px #181818;
+}
+#aboutContent #bioContent p:nth-child(3), #aboutContent #bioContent p:nth-child(4) {
+  margin: 2% 0;
+}
+#aboutContent #bioContent #aboutText {
+  width: 50%;
+  margin: 0 20px 0 0;
+}
+#aboutContent #bioContent #aboutText p {
+  font-size: 18px;
+  line-height: 30px;
+  color: #285480;
+  text-shadow: 0.5px 0.5px 0px #181818;
+}
+#aboutContent #bioContent figure {
+  width: 50%;
+  float: right;
+  margin: 0 0 0 2%;
+}
+#aboutContent #bioContent figure img {
+  width: 100%;
+  box-shadow: 5px 5px 8px #181818;
+}
+#aboutContent #bioContent figure figcaption {
+  margin: 10px 0 0 0;
+  font-style: italic;
+}
+#aboutContent #artistStatement {
+  width: 85%;
+  margin: 4% 0 5% 0;
+  padding: 40px;
+  background-image: linear-gradient(to bottom right, #333, #181818);
+  background-image: linear-gradient(to bottom right, #013971, #285480);
+  box-shadow: 0 0 0 4px #000;
+  border: 4px solid #fff;
+  transition: 0.8s;
+}
+#aboutContent #artistStatement h3 {
+  text-align: center;
+  color: #285480;
+  color: #fff;
+  font-size: 38px;
+  margin: 0 0 2% 0;
+  text-shadow: 2px 2px 2px #000;
+  transition: 0.8s;
+}
+#aboutContent #artistStatement p {
+  color: #fff;
+  font-size: 22px;
+  line-height: 38px;
+  text-shadow: 2px 2px 2px #000;
+  transition: 0.8s;
+}
+#aboutContent #artistStatement:hover {
+  transform: scale(102%);
+  box-shadow: 0 0 20px 5px #000;
+}
+#aboutContent #artistStatement:hover h3, #aboutContent #artistStatement:hover p {
+  text-shadow: 0 0 3px #fff;
+  text-shadow: 4px 4px 4px #000;
+}
+#aboutContent #secondImage {
+  box-shadow: 5px 5px 8px #181818;
+}
+#aboutContent #ethos {
+  width: 80%;
+  margin: 5% 0;
+  background-image: linear-gradient(to bottom right, #333, #181818);
+  box-shadow: 0 0 0 4px #000;
+  border: 4px solid #fff;
+  transition: 0.8s;
+}
+#aboutContent #ethos h3 {
+  text-align: center;
+  color: #285480;
+  color: #fff;
+  font-size: 42px;
+  margin: 4% 0 0 0;
+  text-shadow: 2px 2px 2px #000;
+  transition: 0.8s;
+}
+#aboutContent #ethos p {
+  color: #fff;
+  padding: 40px;
+  font-size: 26px;
+  line-height: 48px;
+  text-shadow: 2px 2px 2px #000;
+  transition: 0.8s;
+}
+#aboutContent #ethos:hover {
+  transform: scale(102%);
+  box-shadow: 0 0 20px 5px #000;
+}
+#aboutContent #ethos:hover h3, #aboutContent #ethos:hover p {
+  text-shadow: 0 0 3px #fff;
 }
 
 @media screen and (max-width: 1280px) {
